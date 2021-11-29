@@ -39,7 +39,7 @@ const Header = () => {
           <ul className="">
             <a href="#home">HOME</a>
 
-            <a href="blogs">BLOGS</a>
+            <a href="#blogs">BLOGS</a>
 
             <a href="#projects">PROJETCTS</a>
 
