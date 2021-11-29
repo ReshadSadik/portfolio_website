@@ -18,7 +18,7 @@ button:focus {
 .bg-danger {
   background-color: var(--primary-color) !important;
 }
-.Header {
+.header {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -26,14 +26,23 @@ button:focus {
   flex-direction: column;
   height: 100vh;
   font-family: Montserrat, sans-serif;
+  background-image: url(https://images.pexels.com/photos/331684/pexels-photo-331684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.Header h1 {
+.header2 {
+  background-image: url(https://images.pexels.com/photos/331684/pexels-photo-331684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+.header-text {
+  margin-left: 1100px;
+}
+.header h1 {
   color: #000;
   text-align: center;
   font-size: 5.5rem;
   position: absolute;
 }
-.Header p {
+.header p {
   margin-top: 125px;
 }
 .particle {
@@ -43,13 +52,13 @@ button:focus {
 }
 .cv {
   position: absolute;
-  top: 535px;
+  top: 620px;
   color: white !important;
-  background-color: #28a745;
+  background-color: var(--button-color);
   font-size: 30px;
   border: none;
   border-radius: 15px;
-  right: 550px;
+  right: 300px;
   font-size: 20px;
   width: 180px;
   height: 50px;
@@ -73,9 +82,9 @@ button:focus {
   font-size: x-large;
 }
 .dark-mode {
-  filter: invert(1) hue-rotate(180deg);
-  -webkit-filter: invert(1) hue-rotate(180deg);
-  -moz-filter: invert(1) hue-rotate(180deg);
+  filter: invert(0.9) hue-rotate(180deg);
+  -webkit-filter: invert(0.9) hue-rotate(180deg);
+  -moz-filter: invert(0.9) hue-rotate(180deg);
 }
 .inverse-dark {
   filter: invert(1) hue-rotate(180deg);
@@ -128,8 +137,7 @@ button:focus {
   background-color: #000;
 }
 .about-text {
-  width: 80%;
-  padding: 2%;
+  width: 100%;
 }
 .red-line {
   color: var(--button-color);
@@ -337,14 +345,36 @@ textarea:focus {
   transition: 0.5;
 }
 .navbar {
-  width: 100%;
-  position: fixed;
+  position: absolute;
+  left: 810px;
   z-index: 1001;
-  top: 0;
-  box-shadow: 0 8px 6px -6px #646464;
+  width: 250px;
+  top: 80px;
+  /* background-color: silver; */
+  /* transform: rotateX(20deg);
+  transform: rotateZ(70deg); */
+  transform: rotate3D(1, -2, 2, 20deg);
 }
+
 .nav-link {
   color: #000 !important;
+}
+.navbar ul {
+  margin: 0;
+}
+
+.navbar ul a {
+  display: block;
+  margin: 30px 10px;
+  background-color: silver;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+}
+.navbar ul a:hover {
+  background-color: tomato;
 }
 .is-current {
   color: var(--primary-color);
@@ -362,6 +392,7 @@ textarea:focus {
 }
 .gtp {
   position: fixed;
+  color: white;
   left: 90%;
   height: 40px;
   top: 90%;
@@ -370,18 +401,19 @@ textarea:focus {
   border: none;
   border-radius: 15px;
   font-size: 15px;
-  background-color: #28a745;
+  background-color: var(--button-color);
   width: 150px;
   cursor: crosshair;
 }
 .see {
-  background-color: #28a745;
+  background-color: var(--button-color);
   color: #fff;
   border: #000;
   outline: #000;
   position: absolute;
   padding: 5px 15px;
   padding-bottom: 7px;
+  padding-right: 5px;
   border-radius: 3px;
   left: 44%;
   top: 90%;
@@ -408,7 +440,7 @@ textarea:focus {
   left: 44.5%;
   bottom: 46%;
 }
-.Header p {
+.header p {
   margin-top: 40px;
 }
 .switch input {
@@ -458,37 +490,78 @@ input:checked + .slider:before {
 .line-1 {
   position: relative;
   top: 10%;
+  left: 30%;
   width: 12em;
   margin: 0 auto;
   border-right: 2px solid rgba(25, 25, 25, 0.75);
-  font-size: 180%;
+  font-size: 220%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
   font-family: 'Anonymous Pro', monospace !important;
 }
-.anim-typewriter {
-  animation: typewriter 4s steps(27) 1s 1 normal both,
+.anim-typewriter1 {
+  animation: typewriter1 4s steps(27) normal infinite,
     blinkTextCursor 0.5s steps(27) infinite normal;
+  position: relative;
 }
+/* .anim-typewriter1::after {
+  content: 'web developer';
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: typewriter1after 4s steps(27) normal infinite both,
+    blinkTextCursor 0.5s steps(27) infinite normal;
+  animation-delay: 2s;
+} */
+/* .anim-typewriter2 {
+  animation: typewriter2 4s steps(27) 1s 1 normal both,
+    blinkTextCursor 0.5s steps(27) infinite normal;
+  animation-delay: 2s;
+} */
 .parallax {
-  background-image: url(https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url(https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 }
-@keyframes typewriter {
-  from {
+@keyframes typewriter1 {
+  0%,
+  100% {
     width: 0;
   }
-  to {
+  50% {
     width: 15em;
+  }
+}
+@keyframes typewriter1after {
+  0%,
+  100% {
+    width: 0;
+    visibility: hidden;
+  }
+  10%,
+  50%,
+  80% {
+    width: 10em;
+    visibility: visible;
+  }
+}
+@keyframes typewriter2 {
+  0%,
+  100% {
+    width: 0;
+  }
+  50% {
+    width: 10em;
   }
 }
 @keyframes blinkTextCursor {
   from {
     border-right-color: rgba(25, 25, 25, 0.75);
+    display: none;
   }
   to {
     border-right-color: transparent;
+    display: none;
   }
 }
 ::-moz-selection {
@@ -508,13 +581,39 @@ input:checked + .slider:before {
   .lead {
     font-weight: 300;
   }
-  .Header h1 {
+  .header-text {
+    margin-left: 0;
+    top: 200px;
+  }
+  .header h1 {
     font-size: 2.5rem;
+    color: white;
   }
   .line-1 {
-    font-size: 150%;
-    top: 10%;
+    font-size: 100%;
+    top: -15%;
+    color: white;
+    left: 0;
   }
+  .navbar {
+    top: 0;
+    left: 0;
+    transform: rotate(0);
+  }
+  .navbar ul {
+    display: flex;
+    padding-left: 0px;
+  }
+  .navbar ul a {
+    margin: 0 5px;
+    font-size: 14px;
+    border-radius: 0;
+    background-color: transparent;
+    color: white;
+    padding: 2px;
+    border-radius: 6px;
+  }
+
   .cv {
     left: 100px;
   }
@@ -558,8 +657,14 @@ input:checked + .slider:before {
     width: 75%;
   }
   .switch {
-    bottom: 48%;
+    bottom: 47%;
     left: 35%;
+    width: 40px;
+    height: 25px;
+  }
+  .slider::before {
+    width: 15px;
+    height: 18px;
   }
   .half form input,
   textarea {
@@ -582,6 +687,7 @@ input:checked + .slider:before {
     margin: 0;
     position: absolute;
     left: 50%;
+    width: 210px;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 1rem;

@@ -4,5 +4,6 @@
 :root {
   --primary-color: #e96224;
   --hover-color: #ff6600;
-  --button-color: #28a745;
+  /* --button-color: #228f3c; */
+  --button-color: rgb(48, 47, 47);
 }

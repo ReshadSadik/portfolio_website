@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderButton from '../layouts/HeaderButton';
 import { header } from '../../profile';
 import '../../styles/no-touch.min.css';
+import Navbar from './Navbar/Navbar';
 
 const Header = () => {
+  const [text, setText] = useState('FrontEnd Web Developer');
+  function myFunction() {}
+  const clicked = () => {
+    myFunction();
+  };
   const scrollTo = () => {
     window.scrollTo({
       top: 100000,
@@ -20,17 +26,32 @@ const Header = () => {
     for (let i = 0; i < x.length; i += 1) {
       x.item(i).classList.toggle('inverse-dark');
     }
-
+    document.getElementById('Header').classList.toggle('header2');
     if (document.documentElement.classList.contains('dark-mode'))
       localStorage.setItem('mode', 'Dark');
     else localStorage.setItem('mode', 'Light');
   };
 
   return (
-    <div>
-      <div className="Header">
-        <h1 className="">{`A Front End WebDeveloper`}</h1>
-        <p className="line-1 anim-typewriter">and this is my portfolio... </p>
+    <div id="home">
+      <div className="header header2" id="Header">
+        <div className="navbar">
+          <ul className="">
+            <a href="#home">HOME</a>
+
+            <a href="blogs">BLOGS</a>
+
+            <a href="#projects">PROJETCTS</a>
+
+            <a href="#about">ABOUT</a>
+
+            <a href="#Contact">CONTACT</a>
+          </ul>
+        </div>
+        <h1 className="header-text">{`Reshad Sadik`}</h1>
+        <p className="line-1 anim-typewriter1"> {text}</p>
+        {/* <p className="line-1 anim-typewriter2"> Graphics Designer </p> */}
+
         <label className="switch">
           <input
             id="mode-switch"
@@ -57,7 +78,6 @@ const Header = () => {
         <button className="cv">Download CV</button>
       </a>
       {/* <button className="cv" > <a href="" download>Download CV</a> </button> */}
-      <div></div>
     </div>
   );
 };

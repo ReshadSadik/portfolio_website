@@ -9,13 +9,11 @@ import {
 
 const Works = () => {
   return (
-    <>
+    <div id="projects">
       <div data-aos="zoom-in-up" data-aos-once="true" className="third">
         <>
           <div className="pp-head-line mx-auto text-center">
-            <h1 id="Projects" className="red-line pp-head">
-              {section3Title}
-            </h1>
+            <h1 className="red-line pp-head">{section3Title}</h1>
           </div>
         </>
         <div className="row">
@@ -46,7 +44,7 @@ const Works = () => {
                     )}
                 </div>
             </div> */}
-    </>
+    </div>
   );
 };
 
