@@ -57,6 +57,7 @@ const Header = () => {
         <button className="cv">Download CV</button>
       </a>
       {/* <button className="cv" > <a href="" download>Download CV</a> </button> */}
+      <div></div>
     </div>
   );
 };
