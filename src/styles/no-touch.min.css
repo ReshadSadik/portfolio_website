@@ -188,7 +188,9 @@ button:focus {
 }
 .project-card {
   padding: 15px;
-  margin-top: 15px;
+  width: 420px;
+  display: inline-block;
+  margin: 0 8px;
   box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
   border: 0.5px solid #eee;
 }
@@ -392,6 +394,10 @@ textarea:focus {
 }
 .project-name {
   text-decoration: none;
+}
+.rows {
+  display: flex;
+  flex-wrap: wrap;
 }
 .gtp {
   position: fixed;

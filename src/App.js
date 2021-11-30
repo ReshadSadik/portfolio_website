@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react';
-import Particles from './components/layouts/Particles';
-import Header from './components/section/Header';
-import About from './components/section/About';
-import Works from './components/section/Works';
-import Contact from './components/section/Contact';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { animation } from './profile';
-import Blog from './components/section/Blog/Blog';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './components/layouts/Home/Home';
+import ProjectDetails from './components/layouts/ProjectDetails/ProjectDetails';
 
 function App() {
   useEffect(() => {
@@ -21,12 +20,16 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Particles />
-      <About />
-      <Works />
-      <Blog></Blog>
-      <Contact />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/home" element={<Home></Home>}></Route>
+          <Route
+            path="/project/:id"
+            element={<ProjectDetails></ProjectDetails>}
+          ></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -16,7 +16,7 @@ const Works = () => {
             <h1 className="red-line pp-head">{section3Title}</h1>
           </div>
         </>
-        <div className="row">
+        <div className="rows">
           {projects &&
             projects.map((x) => (
               <Project

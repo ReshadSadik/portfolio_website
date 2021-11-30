@@ -1,3 +1,17 @@
+import automotive1 from './automotive2.png';
+import automotive2 from './automotive.png';
+import automotive3 from './automotive3.png';
+import fitlab1 from './fitlab (2).png';
+import fitlab2 from './fitlab2.png';
+import fitlab3 from './fitlab3.png';
+import it1 from './it.png';
+import it2 from './it2.png';
+import it3 from './it3.png';
+import macdonald1 from './macdonald.png';
+import macdonald2 from './macdonald2.png';
+import mega1 from './megabooking.png';
+import mega2 from './megabooking2.png';
+
 // Change website animations
 const animation = {
   // make it false to switch off fade-up animation
@@ -80,6 +94,10 @@ const projects = [
     name: 'Automotive',
     skills: ['ReactJs, NodeJs, MongoDB, TailwindCSS,express'],
     url: 'https://automotivenow.netlify.app/',
+    url2: 'https://github.com/ReshadSadik/automotive_client_side',
+    img1: automotive1,
+    img2: automotive2,
+    img3: automotive3,
   },
   {
     // Add image in './styles/images.css' in #project2
@@ -87,6 +105,9 @@ const projects = [
     name: 'FitLab',
     skills: ['Javascript, Hook form, ReactJs, Firebase'],
     url: 'https://fiitlab.netlify.app/',
+    img1: fitlab1,
+    img2: fitlab2,
+    img3: fitlab3,
   },
   {
     // Add image in './styles/images.css' in #project3
@@ -94,13 +115,18 @@ const projects = [
     name: 'IT Solutions',
     skills: ['HTML, CSS, JS,Bootstrap'],
     url: 'https://reshadsadik.github.io/paso-IT-solutions/',
+    img1: it1,
+    img2: it2,
+    img3: it3,
   },
   {
     // Add image in './styles/images.css' in #project4
     id: 'project4',
     name: 'Delicious Resturant',
     skills: ['HTML, CSS, JS'],
-    url: 'https://github.com/ReshadSadik/Delicious-resturant',
+    url: 'https://reshadsadik.github.io/McDonalds-Bootstrap/',
+    img1: macdonald1,
+    img2: macdonald2,
   },
   {
     // Add image in './styles/images.css' in #project5
@@ -108,6 +134,8 @@ const projects = [
     name: 'MegaBooking',
     skills: ['HTML, CSS, JS'],
     url: 'https://megabooking.netlify.app/',
+    img1: mega2,
+    img2: mega1,
   },
 ];
 // Edit your Miscellaneous Activities, its name and the url.
